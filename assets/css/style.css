@@ -34,6 +34,7 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 23. Solar Panel  Blog Sidber Widget CSS
 24. Solar Panel  Search Box Css
 25. Solar Panel  Loader Css
+26. Solar Panel  Product Section CSS
 =======================*/
 
 /*==================================================
@@ -1192,7 +1193,7 @@ a.handbag:before {
     line-height: 24px;
     color: #ffffff;
     font-weight: 400;
-    margin: 20px 0 45px;
+    margin: 20px 0 35px;
     position: relative;
 }
 
@@ -1523,6 +1524,10 @@ a.active {
 
 .call-do-action-section.style-two{
     background: url(../images/resource/call-do-bg2.jpg);
+}
+
+.product-card-h4 {
+    cursor: pointer;
 }
 
 
@@ -2731,6 +2736,7 @@ span.fill {
     line-height: 27px;
     color: #434141;
     font-weight: 500;
+    position: relative;
 }
 
 .bratcome-text ul li a {
@@ -2750,7 +2756,7 @@ span.fill {
 .bratcome-text ul li a::before {
     position: absolute;
     content: "/";
-    left: 50px;
+    left: 48px;
 }
 
 
@@ -4543,14 +4549,201 @@ span.flaticon-multiply i {
     0% {
         left: 0;
     }
-
     100% {
         left: 100%;
     }
 }
 
 
+/* Amish */
 
+/*===========================
+<-- Solar Panel  Product Css -->
+=============================*/
+.head-desc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 1rem;
+    padding-inline: 20px;
+}
+
+.head-desc-section h2,h3 {
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    color: #ef7c30;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Section Styling */
+.prod-card-section {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .prod-card-section .offer-text {
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #082e6d;
+}
+
+.prod-card-section h3 {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: white;
+    padding-left: 5px;
+  }
+
+  /* Card Styling */
+  .prod-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left Description */
+  .prod-card-desc {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .prod-card-desc h5 {
+    color: #ef7c30;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .prod-card-desc h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  
+  .prod-card-desc ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .prod-card-desc ul li {
+    color: black;
+    font-size: 15px;
+  }
+
+  .sticky-sidebar {
+    flex: 1;
+    top: 20px; /* Adjust offset from the top of the viewport */
+    align-self: flex-start;
+    max-height: calc(100vh - 20px); /* Prevent overflow */
+    overflow: auto;
+  }
+
+  .request-card {
+    border-radius: 1rem;
+    padding: 15px 35px;
+    max-width: 400px;
+    width: 100%;
+    position: sticky;
+    background-color: #FF7400;
+  }
+
+  .request-card h4 {
+    padding-bottom: 12px;
+    color: white;
+  }
+
+  .request-card p {
+    padding-block: 10px;
+    color: white;
+  }
+
+  .request-btn {
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    background-color: #2766cf;
+    margin: auto;
+    width: 100%;
+    transition: all .3s linear;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .request-btn:hover {
+    background-color: purple;
+  }
+
+  /* Links */
+  .prod-card-desc a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .prod-card-desc a:hover {
+    text-decoration: none;
+    color: #e63a27 !important;
+  }
+  
+  /* Right Image */
+  .prod-card-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+.head-desc-section h3 {
+    text-transform: capitalize;
+    color: #0d2c66;
+}
+
+.font-description {
+    font-size: 1rem; 
+    font-weight: 500; 
+    line-height: 1.6; 
+    letter-spacing: 0.03em;
+    color: #4A5568; 
+    padding-block: 5px;
+  }
+
+  .font-bolder {
+    font-weight: 700;
+  }
+
+  .row {
+    padding-inline: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .prod-card {
+        flex-direction: column;
+    }
+  }
+  
+/* Amish - End */
 
 /*===========================
 <-- Solar Panel  Loader Css -->
