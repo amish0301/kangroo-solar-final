@@ -94,6 +94,11 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
   position: relative;
 }
 
+#google_translate_element select {
+  color: white !important;
+  background-color: black !important;
+}
+
 .solar-top-content select#Language {
   background: no-repeat;
   border: none;
