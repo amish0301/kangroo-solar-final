@@ -2483,6 +2483,11 @@ span.fill {
   position: relative;
 }
 
+.footer-thumb img {
+  overflow: hidden;
+  width: 100%;
+}
+
 /* copyrightext css */
 
 .row.footer-line {
@@ -2731,8 +2736,20 @@ span.fill {
   padding: 130px 0;
 }
 
+.faq-banner {
+  background: rgba(245, 245, 245, 0.908);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
 .breatcome-content {
   position: relative;
+}
+
+.breatcome-content .solar-btn {
+  margin-left: 0;
+  margin-top: 20px;
 }
 
 .breatcome-title h1 {
