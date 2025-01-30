@@ -48,19 +48,20 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 
 .solar-top-menu ul {
   list-style: none;
+  text-align: right;
 }
 
 .solar-top-menu ul li {
   display: inline-block;
-  margin-right: 36px;
+  margin-right: 18px;
   position: relative;
 }
 
-.solar-top-menu ul li a::after {
+.solar-top-menu ul li a::before {
   position: absolute;
   content: "";
   height: 30px;
-  width: 2px;
+  width: 1px;
   background: #3a3a42;
   left: -22px;
   top: -2px;
@@ -75,37 +76,23 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .solar-top-menu ul li a i {
   color: #e63a27;
-  font-size: 15px;
+  font-size: 25px;
   margin-right: 7px;
 }
 
 .solar-top-content-menu {
-  text-align: right;
+  text-align: left;
 }
 
 .solar-top-content {
   display: inline-block;
   margin-right: 25px;
   position: relative;
-}
-
-#google_translate_element select {
-  color: white !important;
-  background-color: black !important;
-}
-
-.solar-top-content select#Language {
-  background: no-repeat;
-  border: none;
-  font-size: 17px;
-  color: #ffffff;
-  font-weight: 400;
-  outline: 0;
 }
 
 .solar-top-content::before {
@@ -118,18 +105,13 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
   right: -22px;
 }
 
-.solar-top-content option {
-  background: #19142d;
-  font-size: 16px;
-}
-
 .solar-top-social-icon {
   display: inline-block;
 }
 
 .solar-top-social-icon ul li {
   display: inline-block;
-  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .solar-top-social-icon ul li a i {
@@ -174,7 +156,8 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 
 .solar-menu ul li {
   display: inline-block;
-  margin-right: 28px;
+  margin-right: 32px;
+  position: relative;
 }
 
 .solar-menu ul li a {
@@ -193,7 +176,7 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 
 .solar-menu ul li a i {
   font-size: 12px;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 
 .solar-search-button {
@@ -269,10 +252,12 @@ a.handbag:before {
   opacity: 0;
   z-index: 11;
 }
+
 .solar-menu ul .sub-menu ul li {
   display: inline-block;
   margin-left: 0;
   width: 100%;
+  white-space: nowrap;
 }
 .solar-menu ul .sub-menu ul li a {
   padding: 12px 20px;
@@ -287,10 +272,68 @@ a.handbag:before {
   background: #e63a27 !important;
   color: #fff;
 }
+
 .solar-menu ul li:hover .sub-menu {
   visibility: visible;
   opacity: 1;
   top: 99%;
+}
+
+/* solar menu -> 2nd sub menu */
+.sub-menu-2 {
+  position: absolute;
+  top: -5%;
+  left: 100%;
+  background: #fff;
+  border-radius: 5px;
+  width: 217px;
+  text-align: left;
+  margin: 0;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 11;
+}
+
+.sub-menu ul li:hover > .sub-menu-2 {
+  visibility: visible;
+  opacity: 1;
+  left: 100%;
+}
+
+.sub-menu-2 ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.sub-menu-2 ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sub-menu-2 ul li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu-2 ul li a {
+  padding: 12px 20px;
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  color: #202020;
+  margin: 0;
+}
+
+.sub-menu-2 ul li a:hover {
+  background: #e63a27 !important;
+  color: #fff;
 }
 
 /* header style two */
@@ -750,6 +793,9 @@ a.handbag:before {
   margin-bottom: 23px;
 }
 
+
+
+
 .about-content-discription p {
   font-size: 16px;
   line-height: 24px;
@@ -1087,6 +1133,10 @@ a.handbag:before {
   margin-bottom: 16px;
 }
 
+.section-main-title {
+  margin-bottom: 15px;
+}
+
 /*==================================================
  <-- Solar Panel  Service Section Css-->
 ===================================================*/
@@ -1101,8 +1151,8 @@ a.handbag:before {
 }
 
 .service-content {
-  background: url(../images/services/backside-1.jpg);
-  /* background: black; */
+  /* background: url(../images/services/backside-1.jpg); */
+  background: #000000e3;
   background-repeat: no-repeat;
   padding: 0 34px 20px;
   position: relative;
@@ -1229,6 +1279,7 @@ a.handbag:before {
 
 .contact-us-section {
   position: relative;
+  overflow: hidden;
 }
 
 .contact-us-section::before {
@@ -1336,7 +1387,7 @@ a.active {
 
 .pricing-box {
   background: #f3f3f3;
-  padding: 34px 45px 30px;
+  padding: 34px 25px 30px;
   position: relative;
   border-radius: 3px;
   z-index: 1;
@@ -1389,6 +1440,18 @@ a.active {
   transition: 0.5s;
 }
 
+.pricing-card-finance-partners {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-card-finance-partners img {
+  height: 7vw;
+  width: 10vw;
+}
+
 .pricing-box:hover .pricing-rate h2 {
   color: #ffffff;
 }
@@ -1428,13 +1491,20 @@ a.active {
 .pricing-content h4 {
   font-size: 30px;
   line-height: 55px;
-  color: #1c1632;
   font-weight: 500;
   transition: 0.5s;
 }
 
+.pricing-content h5 {
+  color: black;
+}
+
 .pricing-box:hover .pricing-content h4 {
   color: #ffffff;
+}
+
+.pricing-box:hover .pricing-content h5 {
+  color: white;
 }
 
 .pricing-content p {
@@ -1738,7 +1808,7 @@ a.active {
 /*==================================================
  <-- Solar Panel  Protfolio Section Css-->
 ===================================================*/
-
+/* 
 .protfolio-section {
   background: #1c1632;
   padding: 106px 0 108px;
@@ -1804,7 +1874,43 @@ a.active {
 
 .protfolio-item:hover .protfolio-item-icon i {
   color: #e63a27;
+} */
+
+/* Solar Brands Styling */
+.solar-brands-section {
+  padding: 2rem 1.5rem;
+  background: #f3f3f3;
 }
+
+.section-title .section-sub-title h4 {
+  font-weight: 500;
+}
+
+.section-title .section-main-title h2 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Owl Carousel adjustments */
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure Owl Carousel is wide enough */
+.owl-stage-outer {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-scroller .brand-card img {
+      width: 80px;
+  }
+}
+
+
 
 /* protfolio item style two */
 
@@ -2490,10 +2596,10 @@ span.fill {
 
 /* copyrightext css */
 
-.row.footer-line {
+.row.footer-line, .disclaimer-section {
   border-top: 1px solid rgba(111, 111, 111, 0.271);
-  padding: 45px 0 0;
-  margin: 83px 0 0;
+  padding: 35px 0 0;
+  margin: 40px 0 0;
 }
 
 .copyright-text p {
@@ -2695,24 +2801,24 @@ span.fill {
 }
 
 .service-detail-banner {
-    background: url(../images/banner/solar-panel-service-detail.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 130px 0;
+  background: url(../images/banner/solar-panel-service-detail.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
 }
 
 .solar-installation {
-    background: url(../images/banner/solar-panel-installation.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 130px 0;
+  background: url(../images/banner/solar-panel-installation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
 }
 
 .solar-cleaning {
-    background: url(../images/banner/solar-panel-cleaning.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 130px 0;
+  background: url(../images/banner/solar-panel-cleaning.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
 }
 
 .commercial-100kw-banner {
@@ -2738,6 +2844,7 @@ span.fill {
 
 .faq-banner {
   background: rgba(245, 245, 245, 0.908);
+  background: url(../images/banner/faq-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 130px 0;
@@ -3500,6 +3607,9 @@ blockquote {
   font-weight: 400;
   margin-bottom: 33px;
 }
+
+
+
 
 /* faq contact css */
 
@@ -4773,15 +4883,611 @@ h3 {
 }
 
 
-.row {
-  padding-inline: 15px;
+/* solar battery styles */
+
+/* Battery Info Container */
+.battery-info-container,
+.battery-info-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem; /* Space between image and content */
+  padding: 1.5rem 1.5rem;
+  border-radius: 8px; /* Rounded corners */
 }
 
-@media screen and (max-width: 768px) {
-  .prod-card {
-    flex-direction: column;
+.battery-info-container-2 {
+  flex-direction: row-reverse;
+}
+
+.battery-info-container h4 {
+  text-align: justify;
+}
+
+/* Image Section */
+
+.inverter-img {
+  scale: .5;
+  width: 50%;
+}
+
+.battery-img img, .inverter-img img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px; /* Rounded image corners */
+}
+
+/* Content Section */
+.battery-content {
+  flex: 1;
+  color: #333; /* Text color */
+}
+
+.battery-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #e76f51; /* Highlight color for heading */
+}
+
+.battery-content h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1c1632;
+  margin-bottom: 1rem;
+}
+
+.battery-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.battery-cta {
+  padding: 1.5rem 1rem;
+  background-image: url(../images/banner/commercial-solar-panel-system.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensures readability */
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Black Overlay for Reducing Background Image Opacity */
+.battery-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Ensure Text Appears Above the Overlay */
+.battery-cta * {
+  position: relative;
+  z-index: 2;
+}
+
+.battery-cta h2,
+h5,
+.solar-btn {
+  padding: 0.5rem;
+  color: white;
+}
+
+.battery-whyus-container {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem; /* Adds space between left and right sections */
+}
+
+/* Left Side - Content */
+.battery-whyus-container .left-side {
+  flex: 1;
+  max-width: 50%;
+  padding-inline: 1.5rem;
+}
+
+.battery-whyus-container .left-side h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.battery-whyus-container .left-side p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Right Side - Icon and Description */
+.battery-whyus-container .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-inline: 1.5rem;
+  user-select: none;
+}
+
+.right-side .icon-desc-flex-col {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #082e6d;
+  border-radius: 8px;
+}
+
+.right-side .icon-desc-flex-col img {
+  width: 50px; /* Ensures icons are aligned properly */
+  height: auto;
+  mix-blend-mode: difference;
+}
+
+.right-side .icon-desc-flex-col div {
+  flex: 1;
+}
+
+.right-side .icon-desc-flex-col h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.right-side .icon-desc-flex-col p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+  padding-left: 7px;
+}
+
+/* Solar Battery brand scroller */
+
+.brand-scroller-container {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-scroller-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #082e6d;
+}
+
+/* Scrollable Wrapper */
+.brand-scroller {
+  display: flex;
+  flex-wrap: nowrap; /* Forces a single row */
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+/* Enable scrolling when the user scrolls vertically */
+.brand-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Brand Card Styling */
+.brand-card {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.brand-card:hover {
+  transform: scale(1.08);
+}
+
+/* Image inside Brand Card */
+.brand-card img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*===========================
+<-- Gallery Section -->
+=============================*/
+.gallery-section {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+/*===========================
+<-- Whhy Us Section -->
+=============================*/
+.why-choose-us {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.why-choose-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-choose-us .content {
+  flex: 1;
+  max-width: 60%;
+  padding-right: 20px;
+}
+
+.why-choose-us .content h2 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+
+.why-choose-us blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+  background: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.points {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+
+}
+
+.points li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  color: #444;
+}
+
+.why-choose-us .points li::before, .benefits-card .points li::before  {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px; 
+  width: 15px; 
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid #e63a27; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-us .points li::after, .benefits-card .points li::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  background-color: #e63a27;
+  border-radius: 50%;
+}
+
+.why-choose-us .image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.why-choose-us .image-container img {
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.whyus-solar-retail,
+.whyus-value-provide,
+.whyus-customer-service {
+  width: 35%;
+}
+
+.whyus-value-provide img,
+.whyus-solar-retail img,
+.whyus-customer-service img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.battery-content {
+  max-width: 60%;
+}
+
+.battery-content p {
+  font-size: 1.1rem;
+}
+
+.whyus-founder-desc {
+  max-width: 50%;
+}
+
+.battery-content h2 {
+  display: inline-block;
+  position: relative;
+}
+
+.whyus-value h2::after,
+.whyus-retailer h2::after,
+.whyus-service h2::after,
+.whyus-founder-desc h2::after,
+.whyus-proof-work h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 102%;
+  height: 3px;
+  width: 30px; 
+  background-color: #e63a27; 
+}
+
+.whyus-value h2::before,
+.whyus-retailer h2::before,
+.whyus-service h2::before,
+.whyus-founder-desc h2::after,
+.whyus-proof-work h2::before {
+  content: "";
+  position: absolute;
+  left: 104%;
+  top: 65%;
+  height: 3px;
+  width: 30px; /* Length of the lines */
+  background-color: #e63a27; /* Change color as needed */
+}
+
+.battery-content p {
+  position: relative;
+  padding-left: 30px; /* Space for the bullet point */
+}
+
+.whyus-value p::before, .whyus-retailer p::before, .whyus-service p::before, .whyus-founder-desc p::before, .solar-battery p::before, .whyus-proof-work p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px; /* Adjust position */
+  width: 15px; /* Outer circle size */
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid #e63a27; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyus-value p::after, .whyus-retailer p::after, .whyus-service p::after, .whyus-founder-desc p::after, .solar-battery p::after, .whyus-proof-work p::after  {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 13px;
+  width: 9px;
+  height: 9px;
+  background-color: #e63a27;
+  border-radius: 50%;
+}
+
+.footer-merge-col h4 {
+  padding-top: 1.5rem;
+}
+
+.whyus-founder-desc h2 {
+  margin-left: 2px;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 70px; /* Adjust the width of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #e63a27; /* Color of the underline */
+  margin: 10px auto 0; /* Adjust spacing */
+}
+
+.solar-benefits {
+  position: relative;
+  padding: 80px 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.benefits-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.benefits-card-body {
+  background: whitesmoke;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin: 1rem .5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.support-form {
+  max-width: 60%;
+  border: 1px solid black;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.full-width {
+  grid-column: span 2;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
+
+/* Index Hero page Form - amish */
+.hero-section {
+  background: url(../images/banner/form-banner.gif) no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+  background: red;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+
 
 /* Amish - End */
 

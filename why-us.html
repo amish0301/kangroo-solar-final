@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Why Kangaroo Solar</title>
+    <meta name="description" content="A Solar Serice Providers" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="56x56"
+      href="assets/images/fav-icon/icon.png"
+    />
+    <!-- bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- animate CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/animate.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- animate CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/animate.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- animated-text CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/animated-text.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-flaticon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/flaticon.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- theme-default CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-default.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- meanmenu CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/meanmenu.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- transitions CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.transitions.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- venobox CSS -->
+    <link
+      rel="stylesheet"
+      href="venobox/venobox.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-icons.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- Main Style CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- responsive CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- modernizr js -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Main Js -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollerContainer = document.querySelector(
+          ".brand-scroller-container"
+        );
+        const scroller = document.querySelector(".brand-scroller");
+
+        if (!scrollerContainer || !scroller) return;
+
+        let isScrollingInSection = false;
+        let startScrollTop = 0;
+        let startScrollLeft = 0;
+        const scrollSpeedFactor = 1.1;
+
+        const handleScroll = () => {
+          if (isScrollingInSection) {
+            const deltaScroll =
+              (window.scrollY - startScrollTop) * scrollSpeedFactor;
+            scroller.style.scrollBehavior = "smooth"; // Ensure smooth scrolling
+            scroller.scrollLeft = startScrollLeft + deltaScroll;
+          }
+        };
+
+        // Detect when scroller-container is in view
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                isScrollingInSection = true;
+                startScrollTop = window.scrollY; // Capture window scroll position
+                startScrollLeft = scroller.scrollLeft; // Capture scroller's scroll position
+              } else {
+                isScrollingInSection = false;
+              }
+            });
+          },
+          { threshold: 0.4 } // Adjust to trigger when 50% of the section is in view
+        );
+
+        observer.observe(scrollerContainer);
+
+        window.addEventListener("scroll", handleScroll);
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- loder -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+    <!--==================================================-->
+    <!-- Start Solar Panel  Top Bar Section -->
+    <!--==================================================-->
+    <div class="solar-topbar-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="solar-top-content-menu">
+              <div class="solar-top-social-icon">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="solar-top-menu">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-telephone"></i> +199(980) 6915</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-envelope"></i> info@kangaroosolar.com.au</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End Solar Panel  Top Bar Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Solar Panel  Header Section -->
+    <!--==================================================-->
+    <header class="solar-header-section" id="sticky-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="solar-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about-us.html">About</a></li>
+                <li>
+                  <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                  <div class="sub-menu">
+                    <ul>
+                      <li>
+                        <a href="services/solar-panel-installation.html"
+                          >Solar Panel Installation</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/solar-panel-cleaning.html"
+                          >Solar Panel Cleaning</a
+                        >
+                      </li>
+                      <li><a href="solar-battery.html">Solar Batteries</a></li>
+                      <li>
+                        <a href="service-details.html">All Service Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"
+                    >Solar Packages <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <div class="sub-menu">
+                    <ul>
+                      <li>
+                        <a href="products-residential.html"
+                          >Residential Solar <i class="fas fa-chevron-right"></i
+                        ></a>
+                        <!-- sub-menu-2 -->
+                        <div class="sub-menu-2">
+                          <ul>
+                            <li>
+                              <a
+                                href="./residential-product/6.6kw-solar.html"
+                                aria-label="link"
+                                >6.6kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./residential-product/7.92kw-solar.html"
+                                aria-label="link"
+                                >7.92kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./residential-product/10.3kw-solar.html"
+                                aria-label="link"
+                                >10.12kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./residential-product/13.2kw-solar.html"
+                                aria-label="link"
+                                >13.2kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" aria-label="link"
+                                >Custom Size Solution</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="products-commercial.html"
+                          >Commercial Solar <i class="fas fa-chevron-right"></i
+                        ></a>
+                        <!-- sub-menu-2 -->
+                        <div class="sub-menu-2">
+                          <ul>
+                            <li>
+                              <a
+                                href="./comercial-product/20kw-solar.html"
+                                aria-label="link"
+                                >20kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./comercial-product/30kw.html"
+                                aria-label="link"
+                                >30kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./comercial-product/50kw-solar.html"
+                                aria-label="link"
+                                >50kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="./comercial-product/100kw-solar.html"
+                                aria-label="link"
+                                >100kW Solar System</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" aria-label="link">Custom Solution</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"
+                    >Kangaroo Solars <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <div class="sub-menu">
+                    <ul>
+                      <li><a href="why-us.html">Why Us?</a></li>
+                      <li><a href="support.html">Support</a></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="solar-search-button">
+              <div class="solar-social-menu">
+                <ul>
+                  <li>
+                    <a class="search-box-btn search-box-outer" href="#"
+                      ><i class="bi bi-search"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="solar-btn">
+                <a href="contact-us.html"
+                  >Get A Quote <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Solar Mobile Menu Area -->
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+      <div class="mobile-menu">
+        <nav class="solar_menu">
+          <ul class="nav_scroll">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="about-us.html">About</a></li>
+            <li>
+              <a href="#">Services</a>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="services/solar-panel-installation.html"
+                      >Solar Panel Installation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/solar-panel-cleaning.html"
+                      >Solar Panel Cleaning</a
+                    >
+                  </li>
+                  <li><a href="solar-battery.html">Solar Batteries</a></li>
+                  <li>
+                    <a href="service-details.html">All Service Details</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Solar Packages</a>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="products-residential.html">Residential Solar</a>
+                    <!-- sub-menu-2 -->
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li>
+                          <a href="#" aria-label="link">6.6kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">7.92kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">10.12kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">13.2kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">13.2kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">Custom Size Solution</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="products-commercial.html">Commercial Solar</a>
+                    <!-- sub-menu-2 -->
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li>
+                          <a href="#" aria-label="link">20kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">30kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">50kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">100kW Solar System</a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="link">Custom Solution</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Kangaroo Solars</a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="why-us.html">Why Us?</a></li>
+                  <li><a href="support.html">Support</a></li>
+                  <li><a href="faq.html">FAQ's</a></li>
+                  <li><a href="faq.html">Gallery</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End Solar Panel  Header Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Solar Panel  slider Section -->
+    <!--==================================================-->
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="content">
+          <h2>Why Choose Us?</h2>
+          <blockquote>
+            "Empowering you with clean, renewable energy for a brighter
+            tomorrow."
+          </blockquote>
+          <ul class="points">
+            <li>Expertise in solar energy solutions.</li>
+            <li>Customized plans tailored to your needs.</li>
+            <li>Eco-friendly and cost-effective technology.</li>
+            <li>24/7 support and seamless installation.</li>
+            <li>Commitment to sustainability and innovation.</li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img src="assets/images/banner/why-us.png" alt="Why Choose Us" />
+        </div>
+      </div>
+
+      <div class="battery-info-container-2">
+        <div class="whyus-value-provide solar-battery">
+          <img src="assets/images/icons/whyus-value-provide.jpg" alt="img" />
+        </div>
+        <div class="battery-content whyus-value">
+          <h2>Values That Outshine</h2>
+          <p class="font-description">
+            At our core, we are driven by a passion for quality, sustainability
+            and social responsibility.
+          </p>
+          <p class="font-description">
+            These guiding principles motivate us to deliver unparalleled solar
+            solutions while uplifting communities through activism and aid.
+          </p>
+        </div>
+      </div>
+
+      <div class="battery-info-container">
+        <div class="whyus-solar-retail solar-battery">
+          <img src="assets/images/icons/whhyus-solar-retail.jpg" alt="img" />
+        </div>
+        <div class="battery-content whyus-retailer">
+          <h2>Largest Solar Retailer</h2>
+          <p class="font-description">
+            With over 1.6 million solar panels installed across Australia,
+            Kangaroo Solar is the most trusted solar retailer. Our scale allows
+            us to offer competitive pricing while maintaining the highest
+            quality standards.
+          </p>
+        </div>
+      </div>
+
+      <div class="battery-info-container-2">
+        <div class="whyus-customer-service solar-battery">
+          <img src="assets/images/icons/whyus-customer-support.jpg" alt="img" />
+        </div>
+        <div class="battery-content whyus-service">
+          <h2>Exceptional Customer Service</h2>
+          <p class="font-description">
+            Customer satisfaction is at the core of everything we do. We've
+            achieved the highest 5-star rating for solar retailers on Google
+            Reviews and Product Review platforms by going above and beyond for
+            our customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="battery-info-container">
+        <div class="whyus-customer-service solar-battery">
+          <img src="assets/images/icons/word-from-founder.jpg" alt="img" />
+        </div>
+        <div class="battery-content whyus-founder-desc">
+          <h4>A Word from</h4>
+          <h2>Our Founder</h2>
+          <p class="font-description">
+            “At Kangaroo Solar, we believe renewable energy is the path to a
+            vibrant, sustainable world for all. Our mission is to make that
+            transition achievable and affordable for every Australian home -
+            empowering you to reduce your carbon footprint while embracing the
+            ultimate clean energy source: the sun itself.“
+          </p>
+        </div>
+      </div>
+
+      <div class="battery-info-container-2">
+        <div class="whyus-customer-service solar-battery">
+          <img src="assets/images/icons/whyus-proof-work.webp" alt="img" />
+        </div>
+        <div class="battery-content whyus-proof-work">
+          <h2>Proof in Numbers, Praise from Advocates</h2>
+          <p class="font-description">1.6M+ Solar Panels Installed</p>
+          <p class="font-description">485+ MW of Clean Energy Deployed</p>
+          <p class="font-description">5,500+ 5-Star Google Reviews</p>
+          <p class="font-description">13,000+ 5-Star Product Review Ratings</p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================================================-->
+    <!--End Solar Panel  slider Section  -->
+    <!--==================================================-->
+
+    <!-- Start Solar Brands  -->
+    <div class="solar-brands-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Section Title -->
+          <div class="section-title">
+            <div class="section-main-title">
+              <h2>Top Quality Brands</h2>
+            </div>
+            <div class="section-main-title">
+              <h4>Solar Brands We Trust & Install</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Scrollable Brands Section -->
+        <div class="brand-scroller-container">
+          <div class="brand-scroller">
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/alpha-ess.png"
+                alt="Alpha ESS"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/fox.webp"
+                alt="Fox"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/goodwe.png"
+                alt="Goodwe"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/sungrow.png"
+                alt="Sungrow"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/swatten.webp"
+                alt="Swatten"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-battery/tesla.png"
+                alt="Tesla"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-brands/byd.webp"
+                alt="byd"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-brands/solax.webp"
+                alt="solax"
+              />
+            </div>
+            <div class="brand-card">
+              <img
+                src="assets/images/services/solar-brands/jinko.avif"
+                alt="jinko"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- Start Solar Panel  contanct us Section -->
+    <!--==================================================-->
+    <div class="contact-us-section">
+      <div class="row contact-us align-items-center">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-7 col-md-6">
+          <div class="section-title wow animate__fadeInLeft">
+            <div class="section-main-title contact-us">
+              <h2>
+                Get in touch with us today for a 1 to 1 solar solution tailored
+                exclusively to your requirements!
+              </h2>
+            </div>
+          </div>
+          <div class="contact-us-discription wow animate__fadeInUp">
+            <p>Building & Maintaining The Energy</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="solar-btn contact-us wow animate__fadeInRight">
+            <a href="contact-us.html"
+              >Contact Now <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End Solar Panel  contanct us Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Solar Panel  Footer  Section -->
+    <!--==================================================-->
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-wiget wow animate__zoomIn">
+              <div class="footer-wiget-log">
+                <a href="index.html"
+                  ><img src="assets/images/logo2.png" alt="img"
+                /></a>
+              </div>
+              <div class="footer-wiget-text">
+                <p class="font-description">
+                  Empowering you with clean, renewable energy for a brighter
+                  tomorrow.
+                </p>
+              </div>
+              <div class="footer-wiget-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-wiget wow animate__slideInDown">
+              <div class="footer-wiget-title">
+                <h4>Residential Solar</h4>
+              </div>
+              <div class="footer-wiget-menu">
+                <ul>
+                  <li><a href="#">13.2kW Solar System</a></li>
+                  <li><a href="#">10.12kW Solar System</a></li>
+                  <li><a href="#">7.92kW Solar System</a></li>
+                  <li><a href="#">6.6kW Solar System</a></li>
+                  <li><a href="#">Custom Solution</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-wiget wow animate__slideInDown">
+              <div class="footer-wiget-title">
+                <h4>Commercial Solar</h4>
+              </div>
+              <div class="footer-wiget-menu">
+                <ul>
+                  <li><a href="#">100kW Solar System</a></li>
+                  <li><a href="#">50kW Solar System</a></li>
+                  <li><a href="#">30kW Solar System</a></li>
+                  <li><a href="#">20kW Solar System</a></li>
+                  <li><a href="#">Custom Solution</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-wiget-title footer-merge-col">
+                <h4>Solar Services</h4>
+              </div>
+              <div class="footer-wiget-menu">
+                <ul>
+                  <li><a href="#">Solar Panel Installation</a></li>
+                  <li><a href="#">Solar Panel Cleaning</a></li>
+                  <li><a href="#">Solar Batteries</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-wiget wow animate__slideInDown">
+              <div class="footer-wiget-title">
+                <h4>Kangaroo Solar</h4>
+              </div>
+              <div class="footer-wiget-menu">
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Why Kangaroo Solar?</a></li>
+                  <li><a href="">Explore Our Gallery</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-wiget-quick-contanct wow animate__slideInUp">
+              <div class="footer-wiget-title">
+                <h4>Get In Touch</h4>
+              </div>
+              <div class="footer-wiget-contact-menu">
+                <ul>
+                  <li>Valentin, Street Road 24, New York, USA - 67452</li>
+                  <li>(+02) 574 - 328 - 30</li>
+                  <li><a href="#">info@kangaroosolar.com.au</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer-line">
+          <div class="col-lg-3 col-md-6">
+            <div class="copyright-text wow animate__slideInUp">
+              <p>©2025 <a href="#">Kangaroo Solar</a>. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-condition wow animate__slideInDown">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--==================================================-->
+    <!-- End Solar Panel  Footer  Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Search Popup Area -->
+    <!--==================================================-->
+    <div class="search-popup">
+      <button class="close-search style-two">
+        <span class="flaticon-multiply"
+          ><i class="far fa-times-circle"></i
+        ></span>
+      </button>
+      <button class="close-search"><i class="fas fa-arrow-up"></i></button>
+      <form method="post" action="#">
+        <div class="form-group">
+          <input
+            type="search"
+            name="search-field"
+            value=""
+            placeholder="Search Here"
+            required=""
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <!--==================================================-->
+    <!-- End Search Popup Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start scrollup section Area -->
+    <!--==================================================-->
+    <!-- scrollup section -->
+    <div class="scroll-area">
+      <div class="top-wrap">
+        <div class="go-top-btn-wraper">
+          <div class="go-top go-top-button">
+            <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- End scrollup section Area -->
+    <!--==================================================-->
+
+    <!-- jquery js -->
+    <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- ajax mail js -->
+    <script src="assets/js/ajax-mail.js"></script>
+
+    <!-- carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- counterup js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- waypoints js -->
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- imagesloaded js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- venobox js -->
+    <script src="venobox/venobox.js"></script>
+
+    <!--  animated-text js -->
+    <script src="assets/js/animated-text.js"></script>
+
+    <!-- venobox min js -->
+    <script src="venobox/venobox.min.js"></script>
+
+    <!-- isotope js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- jquery meanmenu js -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+
+    <!-- jquery scrollup js -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
+
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <!-- jquery js -->
+
+    <!-- theme js -->
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
