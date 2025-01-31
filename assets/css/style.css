@@ -5463,7 +5463,7 @@ h5,
 /* Index Hero page Form - amish */
 .hero-section {
   background: url(../images/banner/form-banner.gif) no-repeat center center/cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   position: relative;
@@ -5472,10 +5472,10 @@ h5,
 .form-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
+  width: 70%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .btn-custom {
   background: red;
   color: white;
@@ -5485,6 +5485,16 @@ h5,
   justify-content: center;
   gap: 5px;
 }
+
+.btn-custom:hover {
+  background: transparent;
+  color: black;
+  transition: all .5s ease-out;
+}
+
+.form-container .main-form-heading {
+  font-size: 1.7rem;
+} 
 
 
 
