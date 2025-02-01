@@ -5,7 +5,7 @@
   .solar-top-menu ul li {
     margin-right: 38px;
   }
-  
+
   /* soler header section */
 
   .solar-header-section::before {
@@ -753,6 +753,7 @@
   .choose-contact-box.faq {
     padding: 46px 40px 60px;
   }
+
 }
 
 /* Tablet desktop :768px. */
@@ -765,6 +766,11 @@
     display: none;
   }
 
+  /* changed */
+  a.meanmenu-reveal {
+    display: block !important;  
+  }
+  
   .whyus-value h2::after,
   .whyus-retailer h2::after,
   .whyus-service h2::after,

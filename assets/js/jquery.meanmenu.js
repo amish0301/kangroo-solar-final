@@ -36,7 +36,7 @@
 						meanRevealPosition: "right", // left right or center positions
 						meanRevealPositionDistance: "0", // Tweak the position of the menu
 						meanRevealColour: "", // override CSS colours for the reveal background
-						meanScreenWidth: "767", // set the screen width you want meanmenu to kick in at
+						meanScreenWidth: "991", // set the screen width you want meanmenu to kick in at
 						meanNavPush: "", // set a height here in px, em or % if you want to budge your layout now the navigation is missing.
 						meanShowChildren: true, // true to show children in the menu, false to hide them
 						meanExpandableChildren: true, // true to allow expand/collapse children
@@ -61,7 +61,8 @@
 						var meanRevealPosition = options.meanRevealPosition;
 						var meanRevealPositionDistance = options.meanRevealPositionDistance;
 						var meanRevealColour = options.meanRevealColour;
-						var meanScreenWidth = options.meanScreenWidth;
+						// change below to parse
+						var meanScreenWidth = parseInt(options.meanScreenWidth, 10);	
 						var meanNavPush = options.meanNavPush;
 						var meanRevealClass = ".meanmenu-reveal";
 						var meanShowChildren = options.meanShowChildren;
@@ -139,7 +140,7 @@
 						// navigation reveal
 						var showMeanMenu = function() {
 								var meanStyles = "background:"+meanRevealColour+";color:"+meanRevealColour+";"+meanRevealPos;
-								if (currentWidth <= meanScreenWidth) {
+								if (currentWidth <=  meanScreenWidth) {
 								jQuery(removeElements).addClass('mean-remove');
 									meanMenuExist = true;
 									// add class to body so we don't need to worry about media queries here, all CSS is wrapped in '.mean-container'
@@ -241,11 +242,11 @@
 						if (!isMobile) {
 								// reset menu on resize above meanScreenWidth
 								jQuery(window).resize(function () {
-										currentWidth = window.innerWidth || document.documentElement.clientWidth;
+										currentWidth = document.documentElement.clientWidth || window.innerWidth;
 										if (currentWidth > meanScreenWidth) {
 												meanOriginal();
 										} else {
-											meanOriginal();
+											showMeanMenu();	// changed
 										}
 										if (currentWidth <= meanScreenWidth) {
 												showMeanMenu();
@@ -258,7 +259,7 @@
 
 					jQuery(window).resize(function () {
 								// get browser width
-								currentWidth = window.innerWidth || document.documentElement.clientWidth;
+								currentWidth = document.documentElement.clientWidth || window.innerWidth;
 
 								if (!isMobile) {
 										meanOriginal();
@@ -281,9 +282,5 @@
 					// run main menuMenu function on load
 					showMeanMenu();
 				});
-		};
-		
-
-		
-		
+			};
 })(jQuery);
