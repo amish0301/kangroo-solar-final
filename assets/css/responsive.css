@@ -5,7 +5,7 @@
   .solar-top-menu ul li {
     margin-right: 38px;
   }
-
+  
   /* soler header section */
 
   .solar-header-section::before {
@@ -266,12 +266,8 @@
     margin-right: 3px;
   }
 
-  .solar-top-menu ul li ::after {
+  .solar-top-menu ul li a::before {
     display: none;
-  }
-
-  .solar-top-content select#Language {
-    font-size: 16px;
   }
 
   .solar-top-social-icon ul li a i {
@@ -281,7 +277,7 @@
   /* soler header section */
 
   .solar-header-section::before {
-    width: 210%;
+    width: 205%;
   }
 
   .logo a img {
@@ -764,6 +760,7 @@
   .solar-topbar-section {
     display: none;
   }
+
   .solar-header-section {
     display: none;
   }
@@ -1213,6 +1210,10 @@
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .solar-topbar-section {
     display: none;
+  }
+
+  .form-container {
+    min-width: 100%;
   }
 
   .solar-header-section {

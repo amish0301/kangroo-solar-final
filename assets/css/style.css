@@ -138,7 +138,7 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
   position: absolute;
   content: "";
   height: 100%;
-  width: 215%;
+  width: 217%;
   top: 0%;
   left: -182%;
   background: #e63a27;
@@ -5462,7 +5462,10 @@ h5,
 
 /* Index Hero page Form - amish */
 .hero-section {
-  background: url(../images/banner/form-banner.gif) no-repeat center center/cover;
+  background: url(../images/banner/form-banner.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /* min-height: 100vh; */
   display: flex;
   align-items: center;
@@ -5472,7 +5475,7 @@ h5,
 .form-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  width: 70%;
+  max-width: 75%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
