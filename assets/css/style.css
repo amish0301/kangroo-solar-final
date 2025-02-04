@@ -40,6 +40,16 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 /*==================================================
  <-- Solar Panel  Header Top Menu Area Css-->
 ===================================================*/
+body {
+  a {
+    text-decoration: none;
+    color: rgb(53, 53, 239);
+  }
+  a:hover {
+    color: inherit;
+  }
+}
+
 
 .solar-topbar-section {
   padding: 18px 0;
@@ -228,8 +238,8 @@ a.handbag:before {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
   -webkit-animation: 300ms running fadeInDown;
   animation: 500ms running fadeInUp;
-  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   transition: 0.5s !important;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   background: #e3e3e3 !important;
   z-index: 9999 !important;
   animation-name: slideInDown;
@@ -245,7 +255,7 @@ a.handbag:before {
   width: 217px;
   text-align: left;
   margin: 0;
-  -webkit-box-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
   transition: 0.5s;
   visibility: hidden;
   border-top: 2px solid #e63a27;
@@ -858,6 +868,7 @@ a.handbag:before {
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
+  transition: .5s;
 }
 
 .about-video-icon a {
@@ -1570,6 +1581,7 @@ a.active {
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
+  transition: .5s;
 }
 
 .video-icon a i {
@@ -4059,7 +4071,7 @@ span.process-bar.style-two {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid #ffffff;
-  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
   height: 70px;
   line-height: 70px;
   text-align: center;
@@ -4135,7 +4147,7 @@ span.process-bar.style-two {
   color: #e63a27;
   padding: 0;
   cursor: pointer;
-  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
   border: none;
 }
 .search-popup .form-group input[type="submit"]:hover,
@@ -5499,7 +5511,67 @@ h5,
   font-size: 1.7rem;
 } 
 
+.about-hero-1 {
+  padding-block: 2rem;
+}
 
+.about-hero-1 h4 {
+  padding-bottom: 1rem;
+}
+
+.guarantee-section {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.advantage-icon {
+  display: inline-flex;
+  background-color: #f7f7f7;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto 20px;
+}
+
+.guarantee-section .col-md-4 {
+  margin-block: 15px;
+}
+
+.solar-card {
+  position: absolute;
+  top: 50%;
+  right: 18%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 370px;
+}
+.solar-card ul {
+  list-style: none;
+  padding: 0;
+}
+.solar-card ul li {
+  font-weight: bold;
+}
+.solar-card button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.solar-card button:hover {
+  background-color: #0056b3;
+}
 
 
 /* Amish - End */
