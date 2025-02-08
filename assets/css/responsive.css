@@ -20,10 +20,6 @@
     margin-left: 0px;
   }
 
-  .solar-menu ul li {
-    margin-right: 15px;
-  }
-
   .solar-social-menu ul li {
     margin-left: 5px;
   }
@@ -281,7 +277,7 @@
   }
 
   .logo a img {
-    width: 100%;
+    min-width: 85%;
   }
 
   /* solar menu css */
@@ -1769,7 +1765,7 @@
 }
 
 /* small mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (min-width: 480px) and (max-width: 599.98px) {
   .solar-topbar-section {
     display: none;
   }
@@ -2430,12 +2426,10 @@
 }
 
 /* small mobile :320px. */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 479.98px) {
   .solar-topbar-section {
     display: none;
   }
-
-  /* Amish */
 
   .inverter-img {
     scale: 1;
@@ -2572,7 +2566,7 @@
   }
 
   .slider-section {
-    height: 600px;
+    height: 700px;
     display: block !important;
   }
 
