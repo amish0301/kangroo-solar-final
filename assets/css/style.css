@@ -347,6 +347,14 @@ a.handbag:before {
 }
 
 /* header style two */
+.solar-header-section .logo {
+  width: 170px;
+}
+
+.solar-header-section .logo img {
+  width: 100%;
+  transform: scale(1.3);
+}
 
 .solar-header-section.style-two {
   background: #fff;
@@ -497,19 +505,23 @@ a.handbag:before {
 ===================================================*/
 
 .slider-section {
-  background: url(../images/banner/slider2.png);
+  background: url(../images/banner/slider-1.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 800px;
+  background-position: left;
+  height: 700px;
   position: relative;
 }
 
-.slider-section.style-three {
+/* .slider-section .style-three {
   background: url(../images/banner/slider-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+} */
+
+.hero-slider-container {
+  position: relative;
 }
 
 .slider-content h4 {
@@ -539,30 +551,35 @@ a.handbag:before {
 /* owl nav css */
 
 .slider-section .owl-carousel .owl-dots.disabled,
-.owl-carousel .owl-nav.disabled {
-  display: block;
+.owl-carousel .owl-nav{
+  display: inline-flex;
+  gap: 5px;
 }
+
 
 .owl-nav {
   position: absolute;
-  bottom: 42%;
-  right: 60px;
+  bottom: 5%;
+  height: 25px;
+  width: 25px;
+  right: 50px;
+  flex-direction: row-reverse;
 }
 
 .owl-prev i {
-  width: 62px;
-  height: 62px;
-  line-height: 62px;
-  background: #e63a27;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 24px;
-  transition: 0.5s;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
+  width: 45px;
+    height: 45px;
+    line-height: 47px;
+    background: #e63a27;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 22px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .owl-prev i:hover {
@@ -588,18 +605,19 @@ a.handbag:before {
 }
 
 .owl-next i {
-  width: 62px;
-  height: 62px;
-  line-height: 62px;
-  background: #ffffff;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
-  color: #e63a27;
-  font-size: 24px;
-  transition: 0.5s;
-  position: relative;
-  z-index: 1;
+  width: 45px;
+    height: 45px;
+    line-height: 47px;
+    background: #e63a27;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 22px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .owl-next i:hover {
@@ -4714,7 +4732,6 @@ span.flaticon-multiply i {
     left: 100%;
   }
 }
-
 /* Amish */
 
 /*===========================
@@ -5106,7 +5123,7 @@ h5,
 /* Brand Card Styling */
 .brand-card {
   flex: 0 0 auto;
-  width: 180px;
+  width: auto;
   height: 140px;
   display: flex;
   align-items: center;
@@ -5487,7 +5504,7 @@ h5,
 .form-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  max-width: 75%;
+  max-width: 85%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
