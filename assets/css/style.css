@@ -161,12 +161,17 @@ body {
 }
 
 .solar-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .solar-menu ul li {
   display: inline-block;
-  margin-right: 32px;
+  margin: 0 10px;
   position: relative;
 }
 
@@ -347,12 +352,15 @@ a.handbag:before {
 }
 
 /* header style two */
-.solar-header-section .logo {
-  width: 170px;
-}
+/* .solar-header-section .logo {
+  height: auto;
+  max-width: 100%;
+} */
+/* width: 170px; */
 
 .solar-header-section .logo img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   transform: scale(1.3);
 }
 
