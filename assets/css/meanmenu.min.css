@@ -170,21 +170,30 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li {
   background: #444;
 }
-.mean-container a.meanmenu-reveal {
+
+/* .mean-container a.meanmenu-reveal {
   color: #fff;
-}
+  position: relative;
+} */
+
+
 .meanmenu-reveal.meanclose:hover {
   color: #fff !important;
 }
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
+
 .mean-container .mean-bar::before {
-  color: #fff;
-  content: "Solar Panel ";
-  font-size: 28px;
-  font-weight: 600;
-  left: 10px;
+  content: "";
   position: absolute;
-  top: 18px;
+  left: 12px;
+  top: 0;
+  width: 170px;
+  height: 70px;
+  background-image: url("../../assets/images/logo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 100;
 }

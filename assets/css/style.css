@@ -270,7 +270,7 @@ a.handbag:before {
 
 .solar-menu ul .sub-menu ul li {
   display: inline-block;
-  margin-left: 0;
+  margin-inline: 0;
   width: 100%;
   white-space: nowrap;
 }
@@ -515,12 +515,14 @@ a.handbag:before {
   position: relative;
 }
 
-/* .slider-section .style-three {
-  background: url(../images/banner/slider-1.png);
+.slider-section.style-three {
+  background: url(../images/banner/slider-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-} */
+  background-position: left;
+  height: 700px;
+  position: relative;
+}
 
 .hero-slider-container {
   position: relative;
@@ -1185,8 +1187,7 @@ a.handbag:before {
 
 
 .service-content {
-  /* background: url(../images/services/backside-1.jpg); */
-  background: #000000e3;
+  background-color: #1f1f1f;
   background-repeat: no-repeat;
   padding: 0 34px 20px;
   position: relative;
@@ -1236,11 +1237,12 @@ a.handbag:before {
 
 .service-box:hover .service-icon-thumb {
   background: transparent;
+  background: #e63a27;
 }
 
 .service-icon-thumb img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   transition: 0.5s;
 }
@@ -2615,6 +2617,16 @@ span.fill {
 
 .footer-wiget-contact-menu ul li a:hover {
   color: #ffffff;
+}
+
+.footer-wiget-log {
+  width: 250px;
+}
+
+.footer-wiget-log img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* footer thumb */
@@ -5500,7 +5512,6 @@ h5,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   position: relative;
@@ -5514,7 +5525,7 @@ h5,
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .btn-custom {
-  background: red;
+  background: rgb(240, 36, 36);
   color: white;
   font-weight: bold;
   display: flex;
@@ -5524,8 +5535,8 @@ h5,
 }
 
 .btn-custom:hover {
-  background: transparent;
-  color: black;
+  background: #af0a0a;
+  color: white;
   transition: all .5s ease-out;
 }
 
@@ -5533,6 +5544,9 @@ h5,
   font-size: 1.7rem;
 } 
 
+.hero-form-hand {
+  animation: wave-animation 2s infinite;
+}
 .about-hero-1 {
   padding-block: 2rem;
 }
@@ -5697,6 +5711,18 @@ h5,
     transform: rotate(360deg);
   }
 }
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
 
 @keyframes spin {
   0% {
