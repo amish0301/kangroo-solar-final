@@ -783,6 +783,22 @@
     visibility: hidden;
   }
 
+  .why-choose-us .content {
+    min-width: 100%;
+  }
+
+  .why-choose-us .container {
+    flex-direction: column-reverse;
+  }
+
+  .why-choose-us .image-container {
+    text-align: center;
+  }
+  .inverter-img {
+    scale: 1;
+  }
+
+
   /* slider section */
 
   .slider-list.owl-carousel.owl-loaded.owl-drag {
@@ -1220,6 +1236,46 @@
 
   .solar-header-section {
     display: none !important;
+  }
+
+  .whyus-value h2::after,
+  .whyus-retailer h2::after,
+  .whyus-service h2::after,
+  .whyus-founder-desc h2::after,
+  .whyus-proof-work h2::after {
+    visibility: hidden;
+  }
+
+  .whyus-value h2::before,
+  .whyus-retailer h2::before,
+  .whyus-service h2::before,
+  .whyus-founder-desc h2::after,
+  .whyus-proof-work h2::before {
+    visibility: hidden;
+  }
+
+  .why-choose-us .content {
+    min-width: 100%;
+  }
+
+  .why-choose-us .container {
+    flex-direction: column-reverse;
+  }
+
+  .battery-content {
+    min-width: 100%;
+  }
+
+  .why-choose-us .image-container {
+    text-align: center;
+  }
+
+  .inverter-img {
+    scale: 1;
+  }
+
+  .battery-info-container {
+    flex-direction: column;
   }
 
   /* slider section */
@@ -1772,6 +1828,43 @@
 
   .solar-header-section {
     display: none;
+  }
+ 
+  .whyus-service h2::after,
+  .whyus-founder-desc h2::after,
+  .whyus-proof-work h2::after {
+    visibility: hidden;
+  }
+
+  .whyus-service h2::before,
+  .whyus-founder-desc h2::before,
+  .whyus-proof-work h2::before {
+    visibility: hidden;
+  }
+
+  .whyus-solar-retail, .whyus-value-provide, .whyus-customer-service {
+    width: 100%;
+  }
+
+  .why-choose-us .content {
+    min-width: 100%;
+  }
+
+  .why-choose-us .container {
+    flex-direction: column-reverse;
+  }
+
+  .why-choose-us .image-container {
+    text-align: center;
+  }
+
+  .battery-content  {
+    min-width: 100%;
+  }
+
+  .inverter-img {
+    scale: 1;
+    width: 100%;
   }
 
   /* slider section */
