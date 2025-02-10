@@ -1248,6 +1248,7 @@ a.handbag:before {
 
 .service-text a {
   text-decoration: none !important;
+  text-transform: capitalize;
 }
 
 .service-text h4 {
@@ -3117,6 +3118,7 @@ button.icons {
   text-decoration: none;
   transition: 0.5s;
   font-weight: 500;
+  color: #4f454b;
 }
 
 .widget-categories-menu ul li a:hover {

@@ -1348,18 +1348,16 @@
               <div class="choose-contact-title">
                 <h4>Make an Appointment</h4>
               </div>
-              <form
-                action="https://formspree.io/f/myyleorq"
-                method="POST"
-                id="it-form"
-              >
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- web3 input -->
+								<input type="hidden" name="access_key" value="e00845af-3f31-4939-8166-cda6ac699161">
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="form-box">
                       <input
                         type="text"
                         name="name"
-                        placeholder="Full Name *"
+                        placeholder="Your Full Name *"
                       />
                       <i class="bi bi-person"></i>
                     </div>
@@ -1369,7 +1367,7 @@
                       <input
                         type="text"
                         name="email"
-                        placeholder="Email Here *"
+                        placeholder="Your Email Here *"
                       />
                       <i class="bi bi-envelope"></i>
                     </div>
@@ -1391,7 +1389,7 @@
                         id="massage"
                         cols="30"
                         rows="10"
-                        placeholder="Your Comment *"
+                        placeholder="Your Message *"
                       ></textarea>
                       <i class="bi bi-chat-left-text-fill"></i>
                     </div>
