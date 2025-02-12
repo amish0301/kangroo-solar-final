@@ -1150,6 +1150,10 @@ a.handbag:before {
   display: none;
 }
 
+.tab_container span {
+  text-transform: capitalize;
+}
+
 .section-sub-title.faq h4 {
   margin-bottom: 0px;
   padding-left: 0;
